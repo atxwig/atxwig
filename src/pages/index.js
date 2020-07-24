@@ -6,6 +6,7 @@ import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
+import Video from '../components/Video';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
@@ -16,16 +17,18 @@ export default () => (
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-            Main title of your landing page
+            We are Women in Gaming
           </h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
-            Free landing page template to promote your business startup and generate leads for the
-            offered services
+            A student organization built to harbor a community for women gamers to socialize,
+            network, and explore video games.
           </p>
           <p className="mt-8 md:mt-12">
-            <Button size="lg">Get Started</Button>
+            <Button size="lg">Join us!</Button>
           </p>
-          <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
+          <p className="mt-4 text-gray-600">
+            We encourage anyone to join, regardless of gender or sexuality.
+          </p>
         </div>
         <div className="lg:w-1/2">
           <HeroImage />
@@ -70,14 +73,21 @@ export default () => (
       id="services"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
+          <h3 className="text-3xl font-semibold leading-tight">About WiG</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Our team of enthusiastic marketers will analyse and evaluate how your company stacks
-            against the closest competitors
+            Some really cool mission statement that Denise probably wrote already that I'm really
+            just too lazy to go find rn so you get this really long and drawn out statement instead
+            to look like actual text cause I am also too lazy to go find the weird Latin temp
+            placement text.
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<SvgCharts />
+        // <div className="pl-0 lg:pl-24">
+        //   <Video videoSrcURL="https://www.youtube.com/embed/fFm2OWvY2TA" videoTitle="Women in Gaming Introduction Video" />
+        // </div>
+          
+      }
     />
     <SplitSection
       reverseOrder

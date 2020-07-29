@@ -20,7 +20,7 @@ export default () => (
             We are Women in Gaming
           </h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
-            A student organization built to harbor a community for women gamers to socialize,
+            A UT Austin student organization built to harbor a community for women gamers to socialize,
             network, and explore video games.
           </p>
           <p className="mt-8 md:mt-12">
@@ -35,7 +35,7 @@ export default () => (
         </div>
       </div>
     </section>
-    <section id="features" className="py-20 lg:pb-40 lg:pt-48">
+    <section id="features" className="py-20 lg:pb-36 lg:pt-48">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Main Features</h2>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
@@ -69,8 +69,8 @@ export default () => (
         </div>
       </div>
     </section>
+    <section id="about" className="pt-16 md:pt-24 lg:pt-32">
     <SplitSection
-      id="services"
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
           <h3 className="text-3xl font-semibold leading-tight">About WiG</h3>
@@ -80,60 +80,52 @@ export default () => (
             to look like actual text cause I am also too lazy to go find the weird Latin temp
             placement text.
           </p>
+          <Button className="mt-8">Meet our staff</Button>
         </div>
       }
-      secondarySlot={<SvgCharts />
-        // <div className="pl-0 lg:pl-24">
-        //   <Video videoSrcURL="https://www.youtube.com/embed/fFm2OWvY2TA" videoTitle="Women in Gaming Introduction Video" />
-        // </div>
+      secondarySlot={
+        <div className="pl-0 lg:pl-24">
+          <Video videoSrcURL="https://www.youtube.com/embed/fFm2OWvY2TA" videoTitle="Women in Gaming Introduction Video" />
+        </div>
           
       }
     />
+    </section>
+    <section id="events" className="pt-16 md:pt-24 lg:pt-32">
     <SplitSection
       reverseOrder
       primarySlot={
         <div className="lg:pl-32 xl:pl-48">
           <h3 className="text-3xl font-semibold leading-tight">
-            Design And Plan Your Business Growth Steps
+            Events
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Once the market analysis process is completed our staff will search for opportunities
-            that are in reach
+            This can be some cute lil blurb about the events we throw, including games, casual events, speaker nights, etc.
           </p>
+
+          <Button className="mt-8">Check out our calendar!</Button>
         </div>
       }
       secondarySlot={<SvgCharts />}
     />
+    </section>
+    <section id="competitive" className="pt-16 md:pt-24 lg:pt-32">
     <SplitSection
       primarySlot={
         <div className="lg:pr-32 xl:pr-48">
           <h3 className="text-3xl font-semibold leading-tight">
-            Search For Performance Optimization
+            Competitive
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            With all the information in place you will be presented with an action plan that your
-            company needs to follow
+            I know this really isn't competitive anymore but more like cute training but I forgot what we renamed it to. Either way this is a cute blurb about that and a link.
           </p>
+          <Button className="mt-8">More information idk</Button>
         </div>
       }
       secondarySlot={<SvgCharts />}
     />
-    <section id="stats" className="py-20 lg:pt-32">
-      <div className="container mx-auto text-center">
-        <LabelText className="text-gray-600">Our customers get results</LabelText>
-        <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-          </div>
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-          </div>
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-          </div>
-        </div>
-      </div>
     </section>
+
     <section id="testimonials" className="py-20 lg:py-40">
       <div className="container mx-auto">
         <LabelText className="mb-8 text-gray-600 text-center">What customers are saying</LabelText>

@@ -11,6 +11,8 @@ import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 
+import Twiggy from '../assets/twiggy.png';
+
 export default () => (
   <Layout>
     <section className="pt-20 md:pt-40">
@@ -30,8 +32,8 @@ export default () => (
             We encourage anyone to join, regardless of gender or sexuality.
           </p>
         </div>
-        <div className="lg:w-1/2">
-          <HeroImage />
+        <div className="pl-0 lg:pl-64">
+          <img src={Twiggy} width="450px" height="450px"/>
         </div>
       </div>
     </section>

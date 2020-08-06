@@ -1,4 +1,4 @@
-# Gatsby Lander
+<!-- # Gatsby Lander
 
 This is an experimental starter built using [gatsby-theme-codebushi](https://github.com/codebushi/gatsby-theme-codebushi), a theme which uses [Tailwind CSS](https://tailwindcss.com/).
 
@@ -12,6 +12,11 @@ https://gatsby-lander.surge.sh/
 
 Install this starter (assuming Gatsby is installed) by running from your CLI:
 <br/>
-`gatsby new gatsby-starter-lander https://github.com/codebushi/gatsby-starter-lander`
+`gatsby new gatsby-starter-lander https://github.com/codebushi/gatsby-starter-lander` -->
+# Development
+
+See https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/ for extra help.
 
 Run `gatsby develop` in the terminal to start the dev site.
+
+Run `npm run deploy` to push your local files to the live master branch.

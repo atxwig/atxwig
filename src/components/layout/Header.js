@@ -4,7 +4,7 @@ import LogoIcon from '../../assets/logo.png';
 import Button from '../Button';
 
 const Header = () => (
-  <header className="sticky top-0 bg-white shadow">
+  <header className="sticky top-0 bg-white shadow" style={{zIndex: 99}}>
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
       <div className="flex items-center text-2xl">
         <div className="w-12 mr-3">
@@ -22,7 +22,7 @@ const Header = () => (
         <AnchorLink className="px-4" href="#competitive">
           Competitve
         </AnchorLink>
-        <AnchorLink className="px-4" href="#testimonials">
+        <AnchorLink className="px-4" href="#resources">
           Resources
         </AnchorLink>
       </div>

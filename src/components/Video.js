@@ -1,23 +1,26 @@
-import React from "react"
+import React from 'react';
 
 const Video = ({ videoSrcURL, videoTitle, ...props }) => (
-  <div className="h-32 lg:h-64">
+  <div style={{ position: 'relative', width: '100%', height: '0', paddingBottom: '56.27198%' }}>
     <iframe
+      style={{
+        position:"absolute",
+        top:"0",
+        left:"0",
+        width:"100%",
+        height:"100%",
+      }}
+      width="500"
+      height="294"
       src={videoSrcURL}
       title={videoTitle}
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      width="95%"
-      height="100%"
       frameBorder="0"
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
       allowFullScreen
     />
   </div>
-)
-export default Video
+);
 
-{/* <iframe width="956" height="538" 
-src="https://www.youtube.com/embed/fFm2OWvY2TA" 
-frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe> */}
+export default Video;

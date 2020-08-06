@@ -10,8 +10,12 @@ import Video from '../components/Video';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
+import Image from '../components/Image';
 
 import Twiggy from '../assets/twiggy.png';
+import CompImg from '../assets/queens.jpg';
+import EventImg from '../assets/alyssa-is-my-wife.jpg';
+import ResourceImg from '../assets/felicia.jpg';
 
 export default () => (
   <Layout>
@@ -22,8 +26,8 @@ export default () => (
             We are Women in Gaming
           </h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
-            A UT Austin student organization built to harbor a community for women gamers to socialize,
-            network, and explore video games.
+            A UT Austin student organization built to harbor a community for women gamers to
+            socialize, network, and explore video games.
           </p>
           <p className="mt-8 md:mt-12">
             <Button size="lg">Join us!</Button>
@@ -33,7 +37,7 @@ export default () => (
           </p>
         </div>
         <div className="pl-0 lg:pl-64">
-          <img src={Twiggy} width="450px" height="450px"/>
+          <img src={Twiggy} className="invisible lg:visible" width="450px" height="450px" />
         </div>
       </div>
     </section>
@@ -72,65 +76,81 @@ export default () => (
       </div>
     </section>
     <section id="about" className="pt-16 md:pt-24 lg:pt-32">
-    <SplitSection
-      primarySlot={
-        <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">About WiG</h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            Some really cool mission statement that Denise probably wrote already that I'm really
-            just too lazy to go find rn so you get this really long and drawn out statement instead
-            to look like actual text cause I am also too lazy to go find the weird Latin temp
-            placement text.
-          </p>
-          <Button className="mt-8">Meet our staff</Button>
-        </div>
-      }
-      secondarySlot={
-        <div className="pl-0 lg:pl-24">
-          <Video videoSrcURL="https://www.youtube.com/embed/fFm2OWvY2TA" videoTitle="Women in Gaming Introduction Video" />
-        </div>
-          
-      }
-    />
+      <SplitSection
+        primarySlot={
+          <div className="lg:pr-32 xl:pr-48">
+            <h3 className="text-3xl font-semibold leading-tight">About WiG</h3>
+            <p className="mt-8 text-xl font-light leading-relaxed">
+              Some really cool mission statement that Denise probably wrote already that I'm really
+              just too lazy to go find rn so you get this really long and drawn out statement
+              instead to look like actual text cause I am also too lazy to go find the weird Latin
+              temp placement text.
+            </p>
+            <Button className="mt-8">Meet our staff</Button>
+          </div>
+        }
+        secondarySlot={
+          <div className="pl-0 lg:pl-24">
+            <Video
+              videoSrcURL="https://www.youtube.com/embed/fFm2OWvY2TA"
+              videoTitle="Women in Gaming Introduction Video"
+            />
+          </div>
+        }
+      />
     </section>
     <section id="events" className="pt-16 md:pt-24 lg:pt-32">
-    <SplitSection
-      reverseOrder
-      primarySlot={
-        <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Events
-          </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            This can be some cute lil blurb about the events we throw, including games, casual events, speaker nights, etc.
-          </p>
+      <SplitSection
+        reverseOrder
+        primarySlot={
+          <div className="lg:pl-32 xl:pl-48">
+            <h3 className="text-3xl font-semibold leading-tight">Events</h3>
+            <p className="mt-8 text-xl font-light leading-relaxed">
+              This can be some cute lil blurb about the events we throw, including games, casual
+              events, speaker nights, etc.
+            </p>
 
-          <Button className="mt-8">Check out our calendar!</Button>
-        </div>
-      }
-      secondarySlot={<SvgCharts />}
-    />
+            <Button className="mt-8">Check out our calendar!</Button>
+          </div>
+        }
+        secondarySlot={<Image picture={EventImg} orientation="1" />}
+      />
     </section>
     <section id="competitive" className="pt-16 md:pt-24 lg:pt-32">
-    <SplitSection
-      primarySlot={
-        <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Competitive
-          </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            I know this really isn't competitive anymore but more like cute training but I forgot what we renamed it to. Either way this is a cute blurb about that and a link.
-          </p>
-          <Button className="mt-8">More information idk</Button>
-        </div>
-      }
-      secondarySlot={<SvgCharts />}
-    />
+      <SplitSection
+        primarySlot={
+          <div className="lg:pr-32 xl:pr-48">
+            <h3 className="text-3xl font-semibold leading-tight">Competitive</h3>
+            <p className="mt-8 text-xl font-light leading-relaxed">
+              I know this really isn't competitive anymore but more like cute training but I forgot
+              what we renamed it to. Either way this is a cute blurb about that and a link.
+            </p>
+            <Button className="mt-8">More information idk</Button>
+          </div>
+        }
+        secondarySlot={<Image picture={CompImg} orientation="0" />}
+      />
+    </section>
+    <section id="resources" className="pt-16 md:pt-24 lg:pt-32">
+      <SplitSection
+        reverseOrder
+        primarySlot={
+          <div className="lg:pl-32 xl:pl-48">
+            <h3 className="text-3xl font-semibold leading-tight">Resources</h3>
+            <p className="mt-8 text-xl font-light leading-relaxed">
+              Basically Felicia's corner but it can also have stuff like our speaker recordings and other opprotunites for our members.
+            </p>
+
+            <Button className="mt-8">More info uwu</Button>
+          </div>
+        }
+        secondarySlot={<Image picture={ResourceImg} orientation="1" />}
+      />
     </section>
 
     <section id="testimonials" className="py-20 lg:py-40">
       <div className="container mx-auto">
-        <LabelText className="mb-8 text-gray-600 text-center">What customers are saying</LabelText>
+        <LabelText className="mb-8 text-gray-600 text-center">What members are saying</LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3">
           {customerData.map(customer => (
             <div key={customer.customerName} className="flex-1 px-3">
@@ -141,12 +161,10 @@ export default () => (
       </div>
     </section>
     <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-      <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
-      <p className="mt-8 text-xl font-light">
-        Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque fermentum dui faucibus in.
-      </p>
+      <h3 className="text-5xl font-semibold">Want to support us?</h3>
+      <p className="mt-8 text-xl font-light">venmo us enough money and we might make an onlyfans</p>
       <p className="mt-8">
-        <Button size="xl">Get Started Now</Button>
+        <Button size="xl">$$$</Button>
       </p>
     </section>
   </Layout>

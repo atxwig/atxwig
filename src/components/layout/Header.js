@@ -27,7 +27,10 @@ const Header = () => (
         </AnchorLink>
       </div>
       <div className="hidden md:block">
-        <Button className="text-sm">Contact us!</Button>
+        <a href="mailto: utwomeningaming@gmail.com">
+          <Button className="text-sm">Contact us!</Button>
+        </a>
+        
       </div>
     </div>
   </header>

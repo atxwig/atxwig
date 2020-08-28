@@ -30,7 +30,9 @@ export default () => (
             socialize, network, and explore video games.
           </p>
           <p className="mt-8 md:mt-12">
-            <Button size="lg">Join us!</Button>
+            <a href="https://www.discord.gg/pQzSfek" target="_blank" rel="noopener noreferrer">
+              <Button size="lg">Join us!</Button>
+            </a>
           </p>
           <p className="mt-4 text-gray-600">
             We encourage anyone to join, regardless of gender or sexuality.
@@ -43,32 +45,37 @@ export default () => (
     </section>
     <section id="features" className="py-20 lg:pb-36 lg:pt-48">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Main Features</h2>
+        <h2 className="text-3xl lg:text-5xl font-semibold">What We Do</h2>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service One</p>
+              <p className="font-semibold text-xl">Community</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                Our discord server is a place for people to make friends, share interests, and
+                connect with the UT community. We have channels like planning, Looking For Group
+                (LFG), and suggestions for everyone to engage with each other. We also host movie
+                nights, field trips, and potlucks!
               </p>
             </Card>
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Two</p>
+              <p className="font-semibold text-xl">Gaming</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                WiG is committed to condemning and preventing toxicity in our community. Everyone of
+                all skill levels is welcome to join and be themselves when playing with us. We host
+                game nights, friendly in-houses, and competitive coaching. We also have a Minecraft
+                server!
               </p>
             </Card>
           </div>
           <div className="flex-1 px-3">
             <Card className="mb-8">
-              <p className="font-semibold text-xl">Service Three</p>
+              <p className="font-semibold text-xl">Industry</p>
               <p className="mt-4">
-                An enim nullam tempor gravida donec enim ipsum blandit porta justo integer odio
-                velna vitae auctor integer.
+                WiG is a hub for you to find opportunities for internships, jobs, teammates for
+                projects, and advice for your major. We host speakers and collaborate often with
+                partner organizations like <a href="https://longhorngaming.gg/" target="_blank" rel="noopener noreferrer">Longhorn Gaming</a> and <a a href="https://egadsaustin.github.io/freshmansite/" target="_blank" rel="noopener noreferrer">EGaDS!</a>
               </p>
             </Card>
           </div>
@@ -81,12 +88,12 @@ export default () => (
           <div className="lg:pr-32 xl:pr-48">
             <h3 className="text-3xl font-semibold leading-tight">About WiG</h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              Some really cool mission statement that Denise probably wrote already that I'm really
-              just too lazy to go find rn so you get this really long and drawn out statement
-              instead to look like actual text cause I am also too lazy to go find the weird Latin
-              temp placement text.
+              WiG was started with a small team in 2018. Our founder saw the lack of a space for
+              women gamers in the UT community, and WiG was built so that women at UT did not face
+              isolation in their hobbies and career goals. As we grow larger and larger, we strive
+              to keep a close-knit and connected community.
             </p>
-            <Button className="mt-8">Meet our staff</Button>
+            {/* <Button className="mt-8">Meet our staff</Button> */}
           </div>
         }
         secondarySlot={
@@ -106,11 +113,13 @@ export default () => (
           <div className="lg:pl-32 xl:pl-48">
             <h3 className="text-3xl font-semibold leading-tight">Events</h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              This can be some cute lil blurb about the events we throw, including games, casual
-              events, speaker nights, etc.
+              Every month during the school year we host events such as in-houses, casual game
+              events, movie viewing parties, socials, speaker nights, and many more. Our events
+              aren’t member exclusive, so anyone is more than welcome to attend!
             </p>
-
-            <Button className="mt-8">Check out our calendar!</Button>
+            <a href="https://calendar.google.com/calendar/b/2?cid=dXR3b21lbmluZ2FtaW5nQGdtYWlsLmNvbQ" target="_blank" rel="noopener noreferrer">
+              <Button className="mt-8">Check out our calendar!</Button>
+            </a>
           </div>
         }
         secondarySlot={<Image picture={EventImg} orientation="1" />}
@@ -120,12 +129,16 @@ export default () => (
       <SplitSection
         primarySlot={
           <div className="lg:pr-32 xl:pr-48">
-            <h3 className="text-3xl font-semibold leading-tight">Competitive</h3>
+            <h3 className="text-3xl font-semibold leading-tight">Coaching</h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              I know this really isn't competitive anymore but more like cute training but I forgot
-              what we renamed it to. Either way this is a cute blurb about that and a link.
+              We have a skilled, supportive team of Overwatch coaches that can help you in all
+              roles! Everyone’s welcome to try out for our Overwatch team, play in pick up games,
+              and practice with our players. Join our coaching discord server to be a part of the
+              fun!
             </p>
-            <Button className="mt-8">More information idk</Button>
+            <a href="https://www.discord.gg/wn6QPUC" target="_blank" rel="noopener noreferrer">
+              <Button className="mt-8">Join the coaching Discord!</Button>
+            </a>
           </div>
         }
         secondarySlot={<Image picture={CompImg} orientation="0" />}
@@ -138,17 +151,20 @@ export default () => (
           <div className="lg:pl-32 xl:pl-48">
             <h3 className="text-3xl font-semibold leading-tight">Resources</h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              Basically Felicia's corner but it can also have stuff like our speaker recordings and other opprotunites for our members.
+              We provide a wide variety of resources for our members including mental health
+              resources, past guest speaker talks, and other ongoing personal or professional
+              opportunities.
             </p>
-
-            <Button className="mt-8">More info uwu</Button>
+            <a href="https://docs.google.com/document/d/1kODKrU4AxuIyuep0Ko7jOjKMZ2939kr0zwaS0fwJdnU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <Button className="mt-8">See our resources!</Button>
+            </a>
           </div>
         }
         secondarySlot={<Image picture={ResourceImg} orientation="1" />}
       />
     </section>
 
-    <section id="testimonials" className="py-20 lg:py-40">
+    {/* <section id="testimonials" className="py-20 lg:py-40">
       <div className="container mx-auto">
         <LabelText className="mb-8 text-gray-600 text-center">What members are saying</LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3">
@@ -166,6 +182,6 @@ export default () => (
       <p className="mt-8">
         <Button size="xl">$$$</Button>
       </p>
-    </section>
+    </section> */}
   </Layout>
 );

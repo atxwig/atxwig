@@ -13,9 +13,9 @@ const Footer = () => (
           <li>
             <a href="https://utexas.campuslabs.com/engage/organization/womeningaming" target="_blank">Hornslink</a>
           </li>
-          <li>
+          {/* <li>
             <a href="https://google.com" target="_blank">Credits</a>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="flex-1 px-3">

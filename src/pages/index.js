@@ -30,7 +30,7 @@ export default () => (
             socialize, network, and explore video games.
           </p>
           <p className="mt-8 md:mt-12">
-            <a href="https://www.discord.gg/pQzSfek" target="_blank" rel="noopener noreferrer">
+            <a href="https://discord.gg/Z5yyBnK" target="_blank" rel="noopener noreferrer">
               <Button size="lg">Join us!</Button>
             </a>
           </p>
